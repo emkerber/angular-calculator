@@ -14,3 +14,8 @@ Keep a history of the computations the user has performed and display them in a 
 # (Extremely) Pro Mode
 Take a look at the [shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
 and [reverse polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) and allow the user to enter multi-term expressions and evaluate them using the correct operator precedence!
+
+========================================================
+ This pattern is downloaded from www.subtlepatterns.com
+ If you need more, that's where to get'em.
+ ========================================================
