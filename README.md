@@ -1,3 +1,5 @@
+This was an assignment at Prime Digital Academy. Below are the instructions provided.
+
 # Weekend Challenge
 
 The goal for this weekend is to build a browser-based calculator application using AngularJS.
