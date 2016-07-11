@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="calculatorApp">
 
   <head>
       <meta charset="utf-8" />
@@ -10,47 +10,45 @@
       <script src="client.js" charset="utf-8"></script>
   </head>
 
-  <body>
+  <body ng-controller="MainController">
 
       <section id="calculator">
 
-          <div id="calcDisplay"></div>
-
-          <div id="firstLine">
-              <button id="clearButton">C</button>
-              <button id="equalsButton">=</button>
+          <div id="calcDisplay">
+              <h1 ng-model="calcDisplay">{{calcDisplay}}</h1>
           </div>
 
-          <div id="secondLine">
-              <button>+</button>
-              <button>-</button>
-              <button>x</button>
-              <button>÷</button>
+          <div id="firstRow">
+              <div class="buttonRow" ng-repeat="item in firstRow">
+                  <button ng-click="logClick(item)">{{item}}</button>
+              </div>
           </div>
 
-          <div id="thirdLine">
-              <button>5</button>
-              <button>6</button>
-              <button>7</button>
-              <button>8</button>
-              <button>9</button>
+          <div id="secondRow">
+              <div class="buttonRow" ng-repeat="item in secondRow">
+                  <button ng-click="logClick(item)">{{item}}</button>
+              </div>
           </div>
 
-          <div id="fourthLine">
-              <button>0</button>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
+          <div id="thirdRow">
+              <div class="buttonRow" ng-repeat="item in thirdRow">
+                  <button ng-click="logClick(item)">{{item}}</button>
+              </div>
           </div>
-          
+
+          <div id="fourthRow">
+              <div class="buttonRow" ng-repeat="item in fourthRow">
+                  <button ng-click="logClick(item)">{{item}}</button>
+              </div>
+          </div>
+
       </section>
 
 
 
-      <section id="results">
+      <section id="previousCalculations">
 
-
+          <p ng-repeat="calculation in calculationLog">{{calculation}}</p>
 
       </section>
 
